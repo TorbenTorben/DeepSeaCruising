@@ -1,0 +1,4 @@
+﻿
+using DeepSeaCruising;
+
+new Menu();
