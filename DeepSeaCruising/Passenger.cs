@@ -19,5 +19,19 @@ namespace DeepSeaCruising
         public bool OnBoard { get; set; }
         public string IdPassenger { get; set; }
 
+        public int Age()
+        {
+            //TimeSpan t = DateTime.Now - DoB;
+            //DateTime dt = new DateTime(t.Ticks);
+            //int age = dt.Year;
+            //return age;
+
+
+            DateTime checkDT = new DateTime(DateTime.Now.Year, DoB.Month, DoB.Day);
+            int age = DateTime.Now.Year - DoB.Year - 1;
+            if (DateTime.Now > checkDT) age++;
+            return age;
+        }
+
     }
 }
