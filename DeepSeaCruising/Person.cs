@@ -27,6 +27,8 @@ namespace DeepSeaCruising
         public DateTime EndDate { get; set; }
         public int IdNumber { get; set; }
         public bool ScheduledOnBoard { get; set; } //Til senere. If else, om de har behov for at check om de er ombord
+        public DateTime MakeDate { get; set; }
+
 
 
         // DoB Method

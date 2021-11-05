@@ -122,6 +122,9 @@ namespace DeepSeaCruising
         private Person Passenger()
         {
             Person passenger = new Person();
+
+            // Saves current time and date for new person
+            passenger.MakeDate = DateTime.Now;
            
             //Passenger indputs name
             Console.Write("Please Indput your name: ");
